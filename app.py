@@ -42,7 +42,7 @@ data = {
 }
 df = pd.DataFrame(data)
 
-st.markdown("### 📅 Horario")
+st.markdown("### Horario")
 st.dataframe(df, use_container_width=True)
 
 
