@@ -29,9 +29,6 @@ st.markdown(
 # ---- TÍTULO ----
 st.markdown("<h1 style='text-align: center;'>📚 Plan de Clases de Nayeli🎨</h1>", unsafe_allow_html=True)
 
-# ---- IMAGEN DESDE GITHUB ----
-st.image("https://raw.githubusercontent.com/jesusalvarado2023/nayeli2025/refs/heads/main/img/imagen001.png", caption="¡Bienvenida Nayeli! 🧙‍♂️", use_container_width=True)
-
 
 # ---- TABLA DE DATOS ----
 data = {
@@ -43,6 +40,11 @@ df = pd.DataFrame(data)
 
 st.markdown("### 📅 Horario")
 st.dataframe(df, use_container_width=True)
+
+
+# ---- IMAGEN DESDE GITHUB ----
+st.image("https://raw.githubusercontent.com/jesusalvarado2023/nayeli2025/refs/heads/main/img/imagen001.png", caption="¡Bienvenida Nayeli! 🧙‍♂️", use_container_width=True)
+
 
 # ---- PIE DECORATIVO ----
 st.markdown("💡 Alegría + Motivación = Gran sonrisa 😄")
