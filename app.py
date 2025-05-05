@@ -1,6 +1,7 @@
 #nayeli2025
 import streamlit as st
 import pandas as pd
+from datetime import datetime
 
 # ---- DISEÑO INFANTIL ----
 st.set_page_config(page_title="Plan de Clases 🧁", page_icon="🎈", layout="centered")
@@ -28,6 +29,9 @@ st.markdown(
 
 # ---- TÍTULO ----
 st.markdown("<h1 style='text-align: center;'>📚 Plan de Clases de Nayeli🎨</h1>", unsafe_allow_html=True)
+
+fecha_hoy = datetime.now().strftime("%A, %d de %B de %Y")
+st.markdown(f"<p style='text-align: center; color: #8B008B; font-size: 20px;'>📅 Hoy es {fecha_hoy}</p>", unsafe_allow_html=True)
 
 
 # ---- TABLA DE DATOS ----
