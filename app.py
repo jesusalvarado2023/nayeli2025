@@ -27,21 +27,21 @@ st.markdown(
 )
 
 # ---- TÍTULO ----
-st.markdown("<h1 style='text-align: center;'>📚 Plan de Clases 🎨</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>📚 Plan de Clases de Nayeli🎨</h1>", unsafe_allow_html=True)
 
 # ---- IMAGEN DESDE GITHUB ----
-st.image("https://raw.githubusercontent.com/jesusalvarado2023/nayeli2025/refs/heads/main/img/imagen001.png", caption="¡Bienvenida! 🧙‍♂️", use_column_width=True)
+st.image("https://raw.githubusercontent.com/jesusalvarado2023/nayeli2025/refs/heads/main/img/imagen001.png", caption="¡Bienvenida Nayeli! 🧙‍♂️", use_container_width=True)
 
 
 # ---- TABLA DE DATOS ----
 data = {
-    "Día": ["2025-05-06", "2025-05-07", "2025-05-08"],
+    "Día": ["Domingo 2025-05-04", "2025-05-11", "2025-05-18"],
     "Asignatura": ["Algebra 🧮", "Aritmética 🧬", "Geometría 🎨"],
     "Tema": ["Planteo de ecuaciones", "Numeración", "Ángulos y segmentos"]
 }
 df = pd.DataFrame(data)
 
-st.markdown("### 📅 Horario de esta semana")
+st.markdown("### 📅 Horario")
 st.dataframe(df, use_container_width=True)
 
 # ---- PIE DECORATIVO ----
